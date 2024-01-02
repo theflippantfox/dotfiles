@@ -18,7 +18,6 @@ map.set("n", "<leader>bd", ":bd<CR>") -- from Doom Emacs
 -- Append next line to end of current line without g the cursor
 map.set("n", "J", "mzJ`z")
 
-map.set("n", "J", "mzJ`z")
 map.set("n", "<C-d>", "<C-d>zz")
 map.set("n", "<C-u>", "<C-u>zz")
 map.set("n", "n", "nzzzv")
@@ -60,10 +59,3 @@ map.set("n", "<leader>fb", "<cmd> Telescope buffers <CR>")
 map.set("n", "<leader>fh", "<cmd> Telescope help_tags <CR>")
 map.set("n", "<leader>fo", "<cmd> Telescope oldfiles <CR>")
 map.set("n", "<leader>fc", "<cmd> Telescope colorschemes <CR>")
-
---LSP
-map.set("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
-map.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
-map.set("n", "K", ":lua vim.lsp.buf.hover()<CR>")
-map.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
-map.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")

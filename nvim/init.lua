@@ -1,4 +1,4 @@
 require('theflippantfox.rules')
 require('theflippantfox.lazy')
-require('theflippantfox.keymaps')
+require('theflippantfox.keybinds')
 require('theflippantfox.autocommands')
