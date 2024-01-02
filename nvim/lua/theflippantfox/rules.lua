@@ -1,33 +1,24 @@
-vim.cmd [[colorscheme sobrio]]
-
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
-local rule = vim.opt
+local set = vim.opt
 
-rule.termguicolors = true
+set.shiftwidth = 4
+set.tabstop = 4
+set.expandtab = true
 
-rule.nu = true
-rule.relativenumber = false
+set.scrolloff = 10
+set.wrap = false
 
-rule.tabstop = 4
-rule.softtabstop = 4
-rule.shiftwidth = 4
-rule.expandtab = true
+set.swapfile = false
+set.backup = false
 
-rule.smartindent = true
+set.incsearch = true
+set.smartcase = true
+set.hlsearch = true
 
-rule.wrap = false
+set.number = true
 
-rule.swapfile = false
-rule.backup = false
+set.foldmethod = 'indent'
+set.foldlevel = 99
 
-rule.hlsearch = false
-rule.incsearch = true
-
-rule.scrolloff = 8
-rule.signcolumn = "yes"
-rule.isfname:append("@-@")
-
-rule.updatetime = 50
-rule.colorcolumn = "80"
+set.termguicolors = true
