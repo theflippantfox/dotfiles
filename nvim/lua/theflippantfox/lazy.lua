@@ -47,4 +47,12 @@ require("lazy").setup({
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'L3MON4D3/LuaSnip' },
+    {
+        "Djancyp/better-comments.nvim",
+        lazy = false,
+    },
+    {
+        'numToStr/Comment.nvim',
+        lazy = false
+    }
 })

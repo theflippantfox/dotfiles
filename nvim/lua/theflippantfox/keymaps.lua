@@ -1,5 +1,7 @@
 local map = vim.keymap
 
+map.set('n', '<C-n>', '<cmd>Ntree<CR>')
+
 -- Move Selected lines Up/Down
 map.set('v', 'J', ":m '>+1<CR>gv=gv")
 map.set('v', 'K', ":m '<-2<CR>gv=gv")
@@ -13,8 +15,7 @@ map.set("n", "<TAB>", ":bn<CR>")
 map.set("n", "<S-TAB>", ":bp<CR>")
 map.set("n", "<leader>bd", ":bd<CR>") -- from Doom Emacs
 
-
--- Append next line to end of current line without moving the cursor
+-- Append next line to end of current line without g the cursor
 map.set("n", "J", "mzJ`z")
 
 map.set("n", "J", "mzJ`z")
