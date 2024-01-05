@@ -20,7 +20,7 @@ return {
             completion = {
                 completeopt = "menu,menuone,preview,noselect",
             },
-            snippit = {
+            snippet = {
                 expand = function(args)
                     luasnip.lsp_expand(args.body)
                 end
@@ -32,7 +32,7 @@ return {
                 ["<C-f>"] = cmp.mapping.scroll_docs(4),
                 ["<C-Space>"] = cmp.mapping.complete(),
                 ["<C-e>"] = cmp.mapping.abort(),
-                ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                ["<CR>"] = cmp.mapping.confirm({ select = true }),
             }),
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
@@ -41,18 +41,18 @@ return {
                 { name = "path" }
             }),
             formatting = {
-              fields = {'menu', 'abbr', 'kind'},
-              format = function(entry, item)
-                local menu_icon = {
-                  nvim_lsp = 'λ',
-                  luasnip = '⋗',
-                  buffer = 'Ω',
-                  path = '🖫',
-                }
+                fields = { 'menu', 'abbr', 'kind' },
+                format = function(entry, item)
+                    local menu_icon = {
+                        nvim_lsp = 'λ',
+                        luasnip = '⋗',
+                        buffer = 'Ω',
+                        path = '🖫',
+                    }
 
-                item.menu = menu_icon[entry.source.name]
-                return item
-              end,
+                    item.menu = menu_icon[entry.source.name]
+                    return item
+                end,
             },
         })
     end

@@ -1,7 +1,7 @@
 return {
-        "Djancyp/better-comments.nvim",
-        lazy = false,   
-        config = function()
+    "Djancyp/better-comments.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
         require('better-comment').Setup({
             tags = {
                 {
