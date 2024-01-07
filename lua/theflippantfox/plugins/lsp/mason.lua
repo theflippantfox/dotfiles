@@ -20,7 +20,7 @@ return {
         local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
         local servers = {
-            'html', 'jsonls', 'clangd', 'rust_analyzer', 'tsserver'
+            'html', 'jsonls', 'rust_analyzer', 'tsserver', 'gopls', 'cssls', 'htmx'
         }
 
         lspconfig.lua_ls.setup({
