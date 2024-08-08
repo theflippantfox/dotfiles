@@ -9,9 +9,9 @@ return {
         require('mason').setup()
         require('mason-lspconfig').setup({
             ensure_installed = {
-                "lua_ls",
-                "tsserver",
-                "rust_analyzer",
+                --                "lua_ls",
+                --                "tsserver",
+                --                "rust_analyzer",
             },
             automatic_installation = true,
         })
@@ -20,7 +20,7 @@ return {
         local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
         local servers = {
-            'html', 'jsonls', 'rust_analyzer', 'tsserver', 'gopls', 'cssls', 'htmx'
+            'html', 'jsonls', 'rust_analyzer', 'tsserver', 'gopls', 'cssls',
         }
 
         lspconfig.lua_ls.setup({

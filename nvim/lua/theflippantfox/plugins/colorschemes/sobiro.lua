@@ -1,7 +1,7 @@
 return {
-    'elvessousa/sobrio',  
+    'elvessousa/sobrio',
     lazy = false,
     config = function()
-        vim.cmd [[colorscheme sobrio]]
+        --        vim.cmd [[colorscheme sobrio]]
     end
 }

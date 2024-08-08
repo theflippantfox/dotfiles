@@ -23,7 +23,8 @@ map.set("n", "<C-u>", "<C-u>zz")
 map.set("n", "n", "nzzzv")
 map.set("n", "N", "Nzzzv")
 
-map.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
+map.set("n", "<leader>e", "<cmd>NvimTreeFocus<cr>")
+map.set("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>")
 
 -- Window Select Commands
 map.set("n", "<C-h>", "<C-w>h")
