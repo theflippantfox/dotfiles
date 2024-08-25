@@ -17,6 +17,7 @@ set.smartcase = true
 set.hlsearch = true
 
 set.number = true
+set.relativenumber = true
 
 set.foldmethod = 'indent'
 set.foldlevel = 99
