@@ -5,7 +5,9 @@ starship init fish | source
 
 alias ls="exa"
 alias lsa="exa -la"
-alias bat="cat"
+alias cat="bat"
+alias cd="z"
+alias neofetch="neofetch --source ~/.config/neofetch/uwu.txt"
 
 # =============================================================================
 #
